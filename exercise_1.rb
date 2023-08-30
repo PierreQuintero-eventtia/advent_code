@@ -13,6 +13,7 @@ arr.each_with_object([]) do |item, arr|
   end
 end
 
-biggest = main_array.map(&:sum).max
+sum_arrays= main_array.map(&:sum)
+top_three= sum_arrays.sort.reverse.take(3)
 
-puts acum.inspect
+puts top_three.sum
